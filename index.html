@@ -5,7 +5,6 @@
   <title>Bloxlink</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Reset and Base */
     * {
       margin: 0;
       padding: 0;
@@ -30,11 +29,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5em 3em;
+      padding: 1.2em 3em;
     }
 
-    .navbar .logo {
-      font-size: 1.5em;
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 1.4em;
       font-weight: bold;
       color: #ffffff;
     }
@@ -70,18 +79,18 @@
     }
 
     .btn {
-      background-color: #7289da;
+      background-color: #00bcd4;
       color: white;
-      padding: 1em 2em;
+      padding: 1em 2.2em;
       border-radius: 6px;
       display: inline-block;
       font-weight: bold;
       font-size: 1em;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #5b6eae;
+      background-color: #0099aa;
     }
 
     /* Footer */
@@ -97,7 +106,10 @@
 <body>
 
   <header class="navbar">
-    <div class="logo">Bloxlink</div>
+    <div class="logo-container">
+      <img src="https://blox.link/images/logo.png" alt="Bloxlink Logo">
+      <div class="logo-text">Bloxlink</div>
+    </div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Premium</a>
@@ -108,8 +120,8 @@
 
   <section class="hero">
     <h1>The Most Popular Roblox Discord Bot</h1>
-    <p>Over 8 million users linked. Seamlessly connect your Roblox account to Discord and manage your server with confidence.</p>
-    <a href="#" class="btn">Login with Discord</a>
+    <p>Over 8 million users linked. Seamlessly connect your Roblox account and manage your server with confidence.</p>
+    <a href="https://example.com" class="btn">Login with Roblox</a>
   </section>
 
   <footer class="footer">
